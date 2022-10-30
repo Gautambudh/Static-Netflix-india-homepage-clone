@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ************************* SETTING BACKGROUND WALLPAPER AND GRADIENT OVERLAY ******************* */
+.bg {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.822);
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.865) 0,transparent 20%,rgba(0,0,0,.8)),
+    url('./images/bg.jpg');
+    background-size:cover;
+    background-position: center;
+}
+/* ********************************** NAVIGATION BAR ************************************** */
+.navbar {
+    height: 50px;
+}
+.logo img{
+    height: 48px;
+}
+.language-selector select {
+    height: 38px;
+}
+
+/********************************* MAIN HOMEPAGE SECTION ******************************* */
+.input-group {
+    margin-top: 2rem;
+    height: 4rem;
+    text-shadow: 4px 4px 10px black;
+}
+#button-addon2 {
+    font-size: 2rem;
+}
+h1 {
+    font-weight: bold;
+    font-size: 64px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 4px 4px 10px black;
+}
+h2 {
+    text-shadow: 4px 4px 10px black;
+}
+h4 {
+    font-size:1rem ;
+    text-shadow: 4px 4px 10px black;
+}
+
+/* ******************************* MEDIA QUERIES ************************************* */
+
+@media screen and (max-width:450px) {
+    .bg {
+        height: 480px;
+    }
+    .logo img{
+        height:24px;
+    }
+    .language-selector select {
+        height: 24px;
+    }
+    .sign-in button {
+        font-size: 12.7px;
+        align-items: center;
+        padding: 4px 8px;
+    }
+    .navbar {
+        height: 36px;
+        padding-bottom: 0%;
+        margin: 0 0;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 4px 4px 10px black;
+    }
+    h2 {
+        font-size: 12px;
+    }
+    h4 {
+        font-size:0.5rem ;
+        text-shadow: 4px 4px 10px black;
+    }
+    #button-addon2 {
+        font-size: 1rem;
+    }
+    .input-group {
+        height: 2rem;
+    }
+    /* new media queries for sec-2 */
+    #bottom-text {
+        font-size: 1rem;
+    }
+    #downloading {
+        font-size: 0.5rem;
+    }
+    .mobile-text {
+        margin: 0.5rem 0.5rem;
+    }
+    .mobile-bottom img{
+        height: 2rem;
+        width: 1.5rem;
+        margin: 0.6rem 0.3rem;
+    }
+    /* new media queries for section 4 */
+    .faq-sec {
+        width: 100%;
+    }
+    .faq-heading {
+        font-size: 0.5rem;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .mobile-text {
+        margin: 0 0;
+    }
+}
+
+/********************************** SECTION 1 (VIDEO-SEC) *******************************************/
+/* common codes */
+.video-section , .sec-2, .sec-3 , .sec-4, footer {
+    border-top: 8px solid rgb(49, 47, 47);
+}
+
+.story-card {
+    align-items: center;
+}
+.text {
+    justify-content: center;
+}
+h1 {
+    color: white;
+}
+p {
+    color: rgb(160, 160, 160);
+}
+.tv-video {
+    position: relative;
+}
+.tv-video > img {
+    position: relative;
+    z-index: 22;
+}
+.tv-video video {
+    position: absolute;
+    top: 48.3%;
+    left: 49.7%;
+    transform: translate(-50%, -50%);
+    max-width: 70.6%;
+    min-height: 74.4%;
+    z-index: 1;
+}
+@media screen and (max-width:767px) {
+    .text {
+        text-align: center;
+    }
+}
+/* .story-card {
+    align-items: center;
+}
+.card-tv {
+    position: relative;
+    align-items: center;
+}
+.tv img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.card-tv video {
+    max-width:90%;
+    position: absolute;
+    margin: 3.1rem 2rem;
+    left: 0;
+    z-index: 1;
+}  */
+/* ******************* REUSABLE CODE for WHITE COLOUR ***************************** */
+.subtitle , h1 , h2, h4, #bottom-text, .faq-sec h6, .faq-list, ul li a {
+    color: white;
+}
+
+/********************************** SECTION 2 (CHILDREN SEC) *******************************************/
+
+.mobile img, .children img{
+    width:100%;
+}
+.mobile-bottom img{
+    height: 4rem;
+    width: 3rem;
+    margin: 0.6rem 0.4rem;
+}
+.mobile-text {
+    margin: 0.5rem 1rem;
+    align-items: center;
+}
+#downloading {
+    color: blue;
+}
+.mobile-bottom {
+    max-width: 85%;
+    display: flex;
+    padding: 0 2rem;
+    margin: 0 2.5rem;
+    justify-content: center;
+    border: 2px solid rgb(165, 163, 163);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+/********************************** SECTION 4 (FAQS) *******************************************/
+
+.faq-sec {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+}
+.faq-sec h6 {
+    margin: 2rem 0rem;
+    text-align: center;
+    font-size: 2.1rem;
+}
+
+/* ************************* BOTH FOR SEC-4 AND FOOTER ************************************* */
+.faq-list {
+    display: flex;
+    height: 4rem;
+    background-color: rgb(62, 62, 62);
+    align-items: center;
+    list-style: none;
+    margin: 1rem 2rem;
+    padding: 0rem 1rem;
+    text-decoration: none;
+}
+ul li a {
+    text-decoration: none;
+}
+
+/*************** FOOTER SECTION (LINKS TO JOBS, CONTACT US, PRIVACY ETC)  **********************************/
+
+.footer-heading {
+    color: rgb(143, 142, 142);
+}
+.footer-sec {
+    justify-content: space-between;
+    padding: 0rem 4rem;
+    margin-top: 4rem;
+}
